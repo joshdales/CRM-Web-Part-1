@@ -5,6 +5,11 @@ get '/' do
   erb :index
 end
 
+get '/contacts' do
+  @contacts = Contact.all
+  erb :contacts
+end
+
 #
 # class CRM
 #
